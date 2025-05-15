@@ -1,0 +1,91 @@
+i have to create platform called chart_craft:-
+1)personal dashboard having username and password
+2)able to create their own graph tree map
+3)able to give question of above three things in textual format
+4)solve the question by analyising it that it is tree graph or map in both condition that user create it on canvas of platform or give question in textual format
+5)automatically create its code means the question is give in java
+6)able to create graph tree or map if question is in textual format
+7)solve graph tree or map by their respective algorithm and show solution
+8)give visulisation to user that how graph tree or map solved by animation
+9)use nlp to analyse question if question is given in textual format
+
+tech uses:-
+frontend:- REACT 
+Backend:- Spring Boot/ Project manager:- Maven
+Database:- MS SQL(EXPRESS)
+ML:- Python/ Framework:- Flask
+Licencing+Server+Hosting:- AWS ( S3,EC2,RDS)
+Auth:- Google
+
+
+CMD COMMANDS:-
+mvnw.cmd spring-boot:run
+python -m venv ml_env
+ml_env\Scripts\activate
+----------------------------------------------------------------------------------------------------------------------------
+DATABASES COMMANDS:-
+
+USE  Zapis_Application;
+SELECT * FROM  admins;  
+
+USE Zapis_Application;
+DELETE FROM faculty_time_table;
+----------------------------------------------------------------------------------------------------------------------------
+							Postman
+POST	http://localhost:8080/api/users/signup
+
+{
+    "username": "testuser",
+    "password": "password123",
+    "mobileNumber": "1234567890",
+    "email": "testuser@example.com"
+}
+
+
+POST     http://localhost:8080/api/users/login
+
+
+
+{
+    "username": "testuser",
+    "password": "password123"
+}
+
+
+POST     http://localhost:8080/api/users/logout
+
+
+
+E:\3rd year_2nd sem\minor II\chartcraft
+	|- frontend/
+	|- backend/
+	|	|- .mvn/
+	|	|     |- wrapper/
+	|	|     |      |-maven-wrapper
+	|	|- src/
+	|	|   |- main/
+	|	|   |    |- java/
+	|	|   |    |     |- Chart_Craft/
+	|	|   |    |     |	  |- ChartCraft/
+	|	|   |    |     |	  |	     |- controller/
+	|	|   |    |     |	  |          |        |-UserController.java
+	|	|   |    |     |	  |	     |- entity/
+	|	|   |    |     |	  |          |     |-User.java
+	|	|   |    |     |	  |	     |- repository/
+	|	|   |    |     |	  |          |        |-UserRepository.java
+	|	|   |    |     |	  |	     |- services/
+	|	|   |    |     |	  |          |        |-UserServices.java
+	|	|   |    |- resources/
+	|	|   |    |     |- application.properties
+	|	|   |- test/
+	|	|   |    |- java/
+	|	|   |	 |     |- Chart_Craft/
+	|	|   |    |     |	  |- chartcraft/
+	|	|   |    |     |	  |	     |- ChartCraftApplicationTests
+	|	|- .gitattributes
+	|	|- .gitignore
+	|	|- HELP
+	|	|- mvnw
+	|	|- mvnw.cmd
+	|	|- pom
+	|- ml/
